@@ -1,0 +1,145 @@
+\documentclass[paper=a4, fontsize=11pt]{scrartcl} % A4 paper and 11pt font size
+
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage{fourier} % Use the Adobe Utopia font for the document - comment this line to return to the LaTeX default
+\usepackage[english]{babel} % English language/hyphenation
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage{sectsty} % Allows customizing section commands
+\allsectionsfont{\centering \normalfont\scshape} % Make all sections centered, the default font and small caps
+
+\usepackage{fancyhdr} % Custom headers and footers
+\pagestyle{fancyplain} % Makes all pages in the document conform to the custom headers and footers
+\fancyhead{} % No page header - if you want one, create it in the same way as the footers below
+\fancyfoot[L]{} % Empty left footer
+\fancyfoot[C]{} % Empty center footer
+\fancyfoot[R]{\thepage} % Page numbering for right footer
+\renewcommand{\headrulewidth}{0pt} % Remove header underlines
+\renewcommand{\footrulewidth}{0pt} % Remove footer underlines
+\setlength{\headheight}{13.6pt} % Customize the height of the header
+
+\numberwithin{equation}{section} % Number equations within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+\numberwithin{figure}{section} % Number figures within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+\numberwithin{table}{section} % Number tables within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+
+\setlength\parindent{0pt} % Removes all indentation from paragraphs - comment this line for an assignment with lots of text
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+
+\title{	
+\normalfont \normalsize 
+\textsc{NSIT, Division of Computer Engineering} \\ [25pt] % Your university, school and/or department name(s)
+\horrule{0.5pt} \\[0.4cm] % Thin top horizontal rule
+\huge Project Synopsis \\ % The assignment title
+\horrule{2pt} \\[0.5cm] % Thick bottom horizontal rule
+}
+
+\author{
+		\horrule{0.5pt} \\[0.4cm]
+		Ashish Kothari (240/CO/12)\\
+		Ayush Gupta (248/CO/12)\\
+		Chandan Kar (252/CO/12)\\
+		\horrule{0.5pt} \\[0.4cm]} % Your name
+\date{\normalsize\today} % Today's date or a custom date
+
+\begin{document}
+
+\maketitle % Print the title
+
+%----------------------------------------------------------------------------------------
+%	PROBLEM 1
+%----------------------------------------------------------------------------------------
+
+\section{Fast \& light console-based Music Player}
+
+This project aims to build a fast, light and high-quality music player that is console-based with a simple and easy-to-use GUI written on shell scripts made for Linux systems. The music player will be able to decode most modern extensions of audio files.
+
+%------------------------------------------------
+
+\subsection{Utility Requirements}
+
+The utility requires very little computing power to function and is very efficient with CPU usage. For GNU/Linux OS, the utility has about 3\% to 4\% CPU usage on playing a high quality VBR MP3 on a Pentium 366MHz machine.\\
+
+Requirements are listed as below:
+\begin{itemize}
+	\item mpg123 - MPEG player and decoder library
+	\item Linux OS
+	\item Atleast 100MHz of computing power 
+\end{itemize}
+
+
+%------------------------------------------------
+
+\subsection{Innovativeness \& Usefulness}
+
+The music player is being developed keeping in mind minimal usage of computing power while having an easy-to-use GUI to play high quality music. \\
+
+Some proposed features of the utility are:
+\begin{itemize} \itemsep 1pt
+
+	\item Support for various audio subsystems
+	\item Simple but powerful control modes for frontend GUI
+	\item Support for playback through URL
+	\item Support for music playback on Cloud
+	\item Many audio data settings: resampling, choose channel, mono, ...
+	\item Support for Relative Volume Adjustment / Replay Gain
+
+\end{itemize}
+
+%------------------------------------------------
+
+\subsection {Current status of development}
+\begin{itemize} \itemsep -2pt
+
+	\item Basic functionality of music player achieved.
+	\item Frontend GUI under development and is being developed using Zenity library for shell scripts.
+	\item Integration of proposed features into the GUI of the utility left.  
+
+\end{itemize}
+
+%------------------------------------------------
+
+% \paragraph{Heading on level 4 (paragraph)}
+
+% \lipsum[6] % Dummy text
+
+% %----------------------------------------------------------------------------------------
+% %	PROBLEM 2
+% %----------------------------------------------------------------------------------------
+
+% \section{Lists}
+
+% %------------------------------------------------
+
+% \subsection{Example of list (3*itemize)}
+% \begin{itemize}
+% 	\item First item in a list 
+% 		\begin{itemize}
+% 		\item First item in a list 
+% 			\begin{itemize}
+% 			\item First item in a list 
+% 			\item Second item in a list 
+% 			\end{itemize}
+% 		\item Second item in a list 
+% 		\end{itemize}
+% 	\item Second item in a list 
+% \end{itemize}
+
+% %------------------------------------------------
+
+% \subsection{Example of list (enumerate)}
+% \begin{enumerate}
+% \item First item in a list 
+% \item Second item in a list 
+% \item Third item in a list
+% \end{enumerate}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
